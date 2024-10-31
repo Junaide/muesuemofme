@@ -16,18 +16,36 @@ img {
 body{
     background-image: linear-gradient(#A7ACC5,#9ADBCF,#FFD99D);
     font-family: "IBM Plex Sans", sans-serif;
-    padding-left: 20%;
-    padding-right: 20%;
+    /* padding-left: 20%;
+    padding-right: 20%; */
+}
+
+body.fullpage {
+    display: flex;
+    flex-direction: column;
+}
+
+.fullpage section {
+    flex: 1;
+}
+
+.active {
+    text-decoration: underline;
 }
 
 
 .header {
     display: flex;
-    position: fixed;
     justify-content: space-around;
     align-items: center;
     border: 1px solid black;
 
+}
+
+footer {
+    padding: 30px 50px;
+    background-color: #ccc;
+    max-width: 100%;
 }
 
 .wrapper {
@@ -117,9 +135,4 @@ h1 {
 
 section {
     padding: 100px 50px;
-}
-
-footer{
-    background-color: #9ADBCF;
-    max-width: 100%;
 }
